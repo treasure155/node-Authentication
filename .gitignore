@@ -1,0 +1,20 @@
+# Node.js
+node_modules/
+
+# Environment variables
+.env
+
+# Visual Studio Code
+.vscode/
+
+# Mac OS
+.DS_Store
+
+# Thumbnails
+Thumbs.db
+
+# Logs
+*.log
+
+# npm package files
+package-lock.json

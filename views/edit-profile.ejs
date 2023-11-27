@@ -1,0 +1,61 @@
+<%- include('partials/header') %>
+
+<div class="container mt-5">
+  <h1>Edit Profile</h1>
+  <% if (user) { %>
+    <form class="" action="/edit-profile" method="POST">
+      <!-- Add form fields for editing user details -->
+      <div class="form-group">
+      <label for="displayName">Display Name:</label>
+      <input type="text" id="displayName" name="displayName" value="<%= user.displayName %>">
+    </div>
+
+      <label for="profilePicture">Profile Picture:</label>
+      <input type="file" id="profilePicture" name="profilePicture" value="<%= user.profilePicture %>">
+
+      <label for="skills">Skills:</label>
+      <input type="text" id="skills" name="skills" value="<%= user.skills %>">
+
+      <label for="occupation">Occupation:</label>
+      <input type="text" id="occupation" name="occupation" value="<%= user.occupation %>">
+
+      <label for="country">Country:</label>
+      <input type="text" id="country" name="country" value="<%= user.country %>">
+
+      <label for="city">City:</label>
+      <input type="text" id="city" name="city" value="<%= user.city %>">
+
+      <label for="phoneNumber">Phone Number:</label>
+      <input type="text" id="phoneNumber" name="phoneNumber" value="<%= user.phoneNumber %>">
+
+      <label for="interests">Interests:</label>
+      <input type="text" id="interests" name="interests" value="<%= user.interests %>">
+
+      <label for="gender">Gender:</label>
+      <select id="gender" name="gender">
+        <option value="male" <%= user.gender === 'male' ? 'selected' : '' %>>Male</option>
+        <option value="female" <%= user.gender === 'female' ? 'selected' : '' %>>Female</option>
+        <option value="other" <%= user.gender === 'other' ? 'selected' : '' %>>Other</option>
+      </select>
+
+      <label for="maritalStatus">Marital Status:</label>
+      <select id="maritalStatus" name="maritalStatus">
+        <option value="single" <%= user.maritalStatus === 'single' ? 'selected' : '' %>>Single</option>
+        <option value="married" <%= user.maritalStatus === 'married' ? 'selected' : '' %>>Married</option>
+        <option value="divorced" <%= user.maritalStatus === 'divorced' ? 'selected' : '' %>>Divorced</option>
+        <option value="widowed" <%= user.maritalStatus === 'widowed' ? 'selected' : '' %>>Widowed</option>
+      </select>
+
+      <!-- Add other registration fields as needed -->
+
+      <button type="submit" class="btn btn-primary">Save Changes</button>
+    </form>
+
+    <a href="/dashboard" class="btn btn-secondary">Back to Dashboard</a>
+  <% } else { %>
+    <p>Please log in to edit your profile.</p>
+    <a href="/login" class="btn btn-primary">Login</a>
+  <% } %>
+</div>
+
+<%- include('partials/footer') %>

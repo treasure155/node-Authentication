@@ -1,0 +1,27 @@
+<%- include('partials/header') %>
+
+<div class="container mt-5">
+  <h1>Welcome to the Dashboard</h1>
+  <% if (user) { %>
+    <p>Hello, <%= user.displayName %>!</p>
+    <img src="<%= user.profilePicture %>" alt="Profile Picture" style="max-width: 100px; max-height: 100px;">
+    <p>Skills: <%= user.skills %></p>
+    <p>Occupation: <%= user.occupation %></p>
+    <p>Country: <%= user.country %></p>
+    <p>City: <%= user.city %></p>
+    <p>Phone Number: <%= user.phoneNumber %></p>
+    <p>Interests: <%= user.interests %></p>
+    <p>Gender: <%= user.gender %></p>
+    <p>Marital Status: <%= user.maritalStatus %></p>
+
+    <!-- Add an "Edit" button -->
+    <a href="/edit-profile" class="btn btn-primary">Edit Profile</a>
+
+    <a href="/logout" class="btn btn-danger">Logout</a>
+  <% } else { %>
+    <p>Please log in to access the dashboard.</p>
+    <a href="/login" class="btn btn-primary">Login</a>
+  <% } %>
+</div>
+
+<%- include('partials/footer') %>

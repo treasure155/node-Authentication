@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>TechAlpha</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="images/site.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+  <link rel="stylesheet" href="/css/styles.css">
+
+  <style>
+    .navbar {
+      background-color: black; /* Set the menu color to black */
+    }
+
+    .navbar-brand {
+      display: flex;
+      align-items: center;
+    }
+
+    .navbar-brand img {
+      margin-right: 10px;
+    }
+
+    .navbar-nav > li > a {
+      color: white !important; /* Set the text color to white */
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-default text-dark">
+    <div class="con">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/" style="color: white;">
+          <img width="80" height="80" src="/images/icon.png" alt="" class="logo">
+          TECHALPHA BLOG
+        </a>
+      </div>
+
+      <div class="collapse navbar-collapse" id="navbar-collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="/" style="color: white;">Home</a></li> <!-- Added Home link -->
+          <li><a class="dropdownsec" href="/register" style="color: white;">Register</a></li>
+          <li><a class="dropdownsec" href="dashboard" style="color: white;">Dashboard</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>

@@ -1,0 +1,36 @@
+
+body {
+  background-color: #E8ECEF;
+}
+
+.centered {
+    padding-top: 200px;
+    text-align: center;
+}
+
+.secret-text {
+  text-align: center;
+  font-size: 2rem;
+  color: white;
+  background-color: #000;
+}
+
+.visible-secrets {
+  visibility: visible !important;
+  /* Add any other necessary styles */
+}
+
+p{
+font-size: 30px
+}
+.container{
+  max-width: 600px
+}
+.con{
+  padding-left: 50px;
+  padding-right: 50px
+}
+
+.footer{
+  margin-top: 50px;
+}
