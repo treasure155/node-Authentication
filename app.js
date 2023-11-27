@@ -7,7 +7,7 @@ const FacebookStrategy = require('passport-facebook').Strategy;
 const session = require('express-session');
 const bcrypt = require('bcrypt');
 const User = require('./models/User');
-require('dotenv').config(); // Load environment variables from .env file
+require('dotenv').config(); 
 
 const app = express();
 const PORT = process.env.PORT || 3000;
